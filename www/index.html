@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap:
+                                                    https://ssl.gstatic.com http://ssl.gstatic.com
+                                                    https://cordovaapps.visiv.local http://cordovaapps.visiv.local
+                                                    'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content: cdvfile://;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" href="js/jquery.mobile/1.4.5/jquery.mobile-1.4.5.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Hello World</title>
+    </head>
+    <body>
+
+        <div data-role="page" id="index" >
+            <button class="stdbutton" data-role="none" type="button" data-dstpage="#visiv-cordova-plugin-streaming-media">visiv-cordova-plugin-streaming-media</button>
+            <button class="stdbutton" data-role="none" type="button" data-dstpage="#visiv-cordova-plugin-webintent">visiv-cordova-plugin-webintent</button>
+        </div>
+
+
+        <div data-role="page" id="visiv-cordova-plugin-streaming-media" >
+            <input name="srcUri" type="text" placeholder="Inserisci l'url del video da scaricare" value="http://cordovaapps.visiv.local/caudalie-maison-916.mp4" />
+            <div class="progressbar">
+                <div class="label"></div>
+                <div class="progress"></div>
+            </div>
+            <button class="stdbutton" data-role="none" type="button" data-action="download-and-play">Scarica e Visualizza Video</button>
+        </div>
+
+
+        <div data-role="page" id="visiv-cordova-plugin-webintent" >
+            <button class="stdbutton" data-role="none" type="button" data-action="reboot-philips-monitor">Riavvia Monitor Philips</button>
+        </div>
+
+
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>

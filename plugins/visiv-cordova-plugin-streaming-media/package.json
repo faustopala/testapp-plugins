@@ -1,0 +1,60 @@
+{
+  "_from": "git+https://github.com/faustopala/visiv-cordova-plugin-streaming-media.git",
+  "_id": "cordova-plugin-streaming-media@2.3.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/cordova-plugin-streaming-media",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/faustopala/visiv-cordova-plugin-streaming-media",
+    "rawSpec": "https://github.com/faustopala/visiv-cordova-plugin-streaming-media",
+    "saveSpec": "git+https://github.com/faustopala/visiv-cordova-plugin-streaming-media.git",
+    "fetchSpec": "https://github.com/faustopala/visiv-cordova-plugin-streaming-media.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/faustopala/visiv-cordova-plugin-streaming-media.git#be27a8b775ba34aef71c15f1f7d27990cf9018ae",
+  "_spec": "https://github.com/faustopala/visiv-cordova-plugin-streaming-media",
+  "_where": "/home/www/html/vhosts/_CORDOVA_APPS/__PLUGINS__/TestAppPlugins",
+  "author": {
+    "name": "Nicholas Hutchind"
+  },
+  "bugs": {
+    "url": "https://github.com/faustopala/visiv-cordova-plugin-streaming-media/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Timothy Shamilov"
+    },
+    {
+      "name": "Michael Robinson"
+    }
+  ],
+  "deprecated": false,
+  "description": "This plugin allows you to stream audio and video in a fullscreen, native player on iOS and Android.",
+  "homepage": "https://github.com/faustopala/visiv-cordova-plugin-streaming-media#readme",
+  "keywords": [
+    "media",
+    "streaming",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android",
+    "cordova-fireos"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "cordova-plugin-streaming-media",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faustopala/visiv-cordova-plugin-streaming-media.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "2.3.0"
+}

@@ -1,0 +1,80 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+}
+
+/* Portrait layout (default) */
+.app {
+    background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
+    position:absolute;             /* position in the center of the screen */
+    left:50%;
+    top:50%;
+    height:50px;                   /* text area height */
+    width:225px;                   /* text area width */
+    text-align:center;
+    padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
+    margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
+                                   /* offset horizontal: half of text area width */
+}
+
+/* Landscape layout (with min-width) */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .app {
+        background-position:left center;
+        padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height */
+        margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
+                                      /* offset horizontal: half of image width and text area width */
+    }
+}
+
+
+button.stdbutton{ margin: 1vw; padding: 1vh 1vw; width: 22vw; }
+
+
+
+
+div.progressbar,
+div.progressbar .label,
+div.progressbar .progress{ width: 100vw; }
+
+div.progressbar .label{ text-align: center; z-index: 10002; }
+
+div.progressbar .progress{ z-index: 10001; left: 0; top: 0; position: absolute; background-color: #F90; bottom: 0; }
+div.progressbar{ display: flex; justify-content: center; align-items: center; position: relative; }
+/*
+
+
+div.progressbar,
+div.progressbar::AFTER,
+div.progressbar::BEFORE{ height: 2vh; }
+
+div.progressbar::AFTER,
+div.progressbar::BEFORE{ display: flex; content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 100vw; align-items: center; justify-content: center; }
+
+div.progressbar{ display: flex;align-items: center; position: relative; }
+div.progressbar::BEFORE{ content: '0%'; margin: auto; z-index: 1002; text-align: center; }
+div.progressbar::AFTER{  background-color: #F00; width: 15%; z-index: 1001; }
+*/

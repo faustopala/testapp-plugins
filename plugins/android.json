@@ -1,0 +1,27 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "it.visivcomunicazione.testplugins"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "it.visivcomunicazione.testplugins"
+    },
+    "cordova-plugin-file-transfer": {
+      "PACKAGE_NAME": "it.visivcomunicazione.testplugins"
+    },
+    "visiv-cordova-plugin-streaming-media": {
+      "PACKAGE_NAME": "it.visivcomunicazione.testplugins"
+    },
+    "visiv-cordova-plugin-webintent": {
+      "PACKAGE_NAME": "it.visivcomunicazione.testplugins"
+    }
+  },
+  "dependent_plugins": {}
+}
